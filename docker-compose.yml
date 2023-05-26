@@ -4,6 +4,7 @@ services:
   jenkins:
     image: jenkins/jenkins:lts
     container_name: jenkins
+    hostname: jenkins
     restart: always
 #     privileged: true
 #     user: root
