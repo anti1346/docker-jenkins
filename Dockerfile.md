@@ -17,6 +17,10 @@ docker buildx build --platform linux/amd64,linux/arm64 -t anti1346/jenkinsindock
 docker buildx build --platform linux/amd64,linux/arm64 -t anti1346/jenkinsindocker:latest --push .
 
 ```
+##### 도커 허브에서 이미지 다운로드 (PULL)
+```
+docker pull anti1346/jenkinsindocker:latest
+```
 #### 빌드된 이미지 확인
 ```
 docker images
@@ -24,9 +28,4 @@ docker images
 #### 다중 플랫폼 이미지 정보 확인
 ```
 docker inspect anti1346/jenkinsindocker:latest --format='{{.Architecture}}'
-```
-```
-##### 도커 허브에서 이미지 다운로드 (PULL)
-```
-docker pull anti1346/jenkinsindocker:latest
 ```
