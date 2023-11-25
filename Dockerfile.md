@@ -7,7 +7,19 @@ docker buildx create --use
 ```
 docker buildx build --platform linux/amd64,linux/arm64 -t anti1346/jenkinsindocker:latest .
 ```
-#### 다중 플랫폼 이미지 확인
+#### Docker 이미지 확인
 ```
 docker images
+```
+#### 다중 플랫폼 이미지 정보 확인
+```
+docker inspect anti1346/jenkinsindocker:latest --format='{{.Architecture}}'
+```
+##### 도커 이미지를 도커 허브에 올리기(PUSH)
+```
+docker push anti1346/jenkinsindocker:latest
+```
+##### 도커 이미지를 도커 허브에 내려받기(PULL)
+```
+docker pull anti1346/jenkinsindocker:latest
 ```
