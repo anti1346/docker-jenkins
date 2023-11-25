@@ -5,7 +5,7 @@ docker buildx create --use
 ```
 ##### Buildx로 빌드
 ```
-docker buildx build -t anti1346/jenkinsindocker:latest --platform linux/amd64,linux/arm64 .
+docker buildx build --platform linux/amd64,linux/arm64 -t anti1346/jenkinsindocker:latest .
 ```
 #### 다중 플랫폼 이미지 확인
 ```
