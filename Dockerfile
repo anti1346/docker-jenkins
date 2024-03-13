@@ -26,4 +26,3 @@ RUN apt-get update && \
 
 # Switch back to jenkins user
 USER jenkins
-
